@@ -2,41 +2,41 @@
 
 
 @font-face{
-    font-family: 'GT-Walsheim-Bold';
-    src: url('../fonts/GT-Walsheim-Bold.woff') format('woff');
+    font-family: 'Lato-Bold';
+    src: url('../fonts/Lato-Bold.ttf') format('woff');
     font-weight: bold;
     font-style: normal;
-    }
+}
 
 @font-face{
-    font-family: 'GT-Walsheim-Regular';
-    src: url('../fonts/GT-Walsheim-Regular.woff') format('woff');
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato-Regular.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
-    }
+}
 
 * { margin: 0; }
 html, body { min-height: 100vh; }
 
 body {
-	font-family: 'GT-Walsheim-Regular', 'Helvetica', sans-serif;
-	background-color: #fff;
-	color: #0033cc;
+	font-family: 'Lato-Regular', 'Helvetica', sans-serif;
+	background-color: black;
+	color: white;
 	font-size: 18px;
 }
 
 body a {
-	color: #0033cc;
+	color: white;
 	text-decoration: underline;
 }
 
 body a:hover {
-	color: #0033cc;
+	color: white;
 	text-decoration: none;
 }
 
 h1 {
-	font-family: 'GT-Walsheim-Bold', 'Helvetica', sans-serif;
+	font-family: 'Lato-Bold', 'Helvetica', sans-serif;
 	font-size: 64px;
 	text-transform: uppercase;
 	letter-spacing: 6pt;
@@ -44,24 +44,37 @@ h1 {
 }
 
 h2 {
-	font-family: 'GT-Walsheim-Regular', 'Helvetica', sans-serif;
+	font-family: 'Lato-Regular', 'Helvetica', sans-serif;
 	font-size: 36px;
 	line-height: 1.3em;
 	letter-spacing: 1pt;
 }
 
-.header { 
-	width: 100%; 
+.header {
+	width: 100%;
 	height: 900px;
-	background-color: #0033cc;
+	background-color: white;
+}
+
+.header hr {
+	margin: 0;
+	border-top-style: solid;
+	border-top-width: 5px;
+	border-top-color: black;
+}
+
+.header h1 {
+    color: black;
+    text-align: center;
+    font-size: 100px;
 }
 
 .logo {
-	position: absolute; 
+	position: absolute;
 	top: 19%;
-	width: 630px; 
+	width: 630px;
 	left: 50%;
-	margin-left: -315px; 
+	margin-left: -315px;
 }
 
 .intro .container {
@@ -74,7 +87,7 @@ h2 {
 }
 
 .intro .col-md-4 {
-	background-color: #fff;
+	background-color: black;
 	margin-top: 20px;
 }
 
@@ -82,7 +95,7 @@ h2 {
 	margin: 0;
 	border-top-style: solid;
 	border-top-width: 5px;
-	border-top-color: #0033cc;
+	border-top-color: white;
 }
 
 .intro .col-md-8 h1, h2 {
@@ -98,7 +111,7 @@ h2 {
 	padding-top: 20px;
 	border-top-style: solid;
 	border-top-width: 1px;
-	border-top-color: #0033cc;
+	border-top-color: white;
 	letter-spacing: .3pt;
 	margin-bottom: 50px;
 }
@@ -111,69 +124,26 @@ form {
 	margin-bottom: 50px;
 }
 
-button {
+.btn {
   width: 100%;
   margin-top: 10px;
   padding: 10px;
   cursor: pointer;
-  background-color: #fff;
-  color: #0033cc ;
-  border-color: #0033cc ;
+  background-color: black;
+  color: white ;
+  border-color: white ;
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
-  box-shadow: 3px 3px #0033cc ;
+  box-shadow: 3px 3px white ;
   outline: 0;
+  text-decoration: none;
 }
 
-button:active {
-  background-color: #0033cc ;
-  color: #fff;
+.btn:active {
+  background-color: white ;
+  color: black;
   outline: 0;
-}
-
-input[type="email"] {
-  display: block;
-  text-align: center;
-  margin-top: 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #0033cc ;
-  color: #0033cc ;
-  width: 100%;
-  padding: 10px;
-}
-
-input:focus {
-  outline: none;
-}
-
-::-webkit-input-placeholder {
-   color: #7591e4;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: #7591e4;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #7591e4;  
-}
-
-:-ms-input-placeholder {  
-   color: #7591e4;  
-}
-
-.footer {
-	padding-top: 10%;
-	margin: 0 auto;
-}
-
-.footer img {
-	max-height: 100px;
-	float: left;
-	margin-top: 10px;
-	margin-right: 5px;
 }
 
 @media (max-width: 700px) {
@@ -188,25 +158,11 @@ input:focus {
 	.logo {
 		right: 16%;
 		left: 16%;
-		width: auto; 
-		margin-left: 0; 
+		width: auto;
+		margin-left: 0;
 	}
 
 	h1 {
 		font-size: 42px;
-	}
-
-	.footer {
-		padding-bottom: 20px;
-	}
-}
-
-@media (max-width: 400px) {
-	.footer img {
-		max-height: inherit;
-		float: left;
-		margin-top: 10px;
-		margin-right: 0;
-		width: 33%;
 	}
 }

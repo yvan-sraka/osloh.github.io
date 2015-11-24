@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
-  
-<!-- Mirrored from www.blackbox.cool/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Nov 2015 19:39:15 GMT -->
+
 <head>
     <meta charset="utf-8">
-    <title>o'sloh</title>
+    <title>O'sloh</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name='description' content='A boring new business company from the creators of Cards Against Humanity.'>
-    <meta property="og:title" content="Blackbox">
-    <meta property="og:site_name" content="Blackbox">
+    <meta property="og:title" content="O'sloh">
+    <meta property="og:site_name" content="O'sloh">
     <meta property="og:url" content="index.html">
     <meta property="og:description" content="A boring new business company from the creators of Cards Against Humanity.">
-    <meta property="og:image" content="img/facebook-blackbox.png">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -21,24 +19,22 @@
   <body>
     <!-- TITLE/ANIMATION -->
     <header style='position: relative;' class='header'>
-
       <div class='background' style='position: absolute; top: 0; bottom: 0; left: 0; right: 0;'></div>
       <div class='logo'>
-        <object type='image/svg+xml' data='img/logo.svg' style='width: 100%; height: 100%;'></object>
+        <h1>O'sloh</h1>
+        <hr />
       </div>
-
     </header>
 
     <!-- ABOUT -->
     <div class="about">
       <div class="intro">
         <div class="container">
-        <img src="img/blackbox_logo_blue.png"></img>
           <div class="row">
             <div class="col-md-8">
-              <hr>
+              <hr />
               <h1>O'sloh</h1>
-              <h2>Communautee de consultant en informatique, avec des professionnels.</h2>
+              <h2>Community of IT Professionals</h2>
             </div>
             <div class="col-md-4">
             <!-- Negative Space above "let's talk"-->
@@ -51,64 +47,65 @@
           <div class="row">
               <div class="col-md-4">
                 <p>
-                  Je consulte avant de me lancer dans un projet informatique. Je demande de l'aide pendant le développement de mes projets. O'sloh me contact pour me donner le meilleur des suivis. Collabore gratuitement avec moi. C'est genial.
+                  I consult before embarking on a computer project. I ask for help during the development of my projects. O'sloh contact me to give me the best of follow-ups. Collaborate for free with me. It's awesome.
                 </p>
               </div>
               <div class="col-md-4">
                 <p>
-                  O'sloh est une communauté d'entre aide. Chaque membre apporte sa part de connaissance. Elle apporte des réponses les plus précises, objectives puis subjectives, sur des domaines très variés.
+                  O'sloh is a self-help community. Each member brings its share of knowledge. It provides the most precise, objective and subjective answers on a wide range of topics.
                 </p>
               </div>
               <div class="col-md-4 mailing-list">
                 <p>
-                  J'ai une idée que je n'ose pas lancer. Je me demande comment et avec quelle techno réaliser mon projet. Je suis complètement bloqué et perdu dans son développement. <b>Je contacte O'sloh !</b>
+                  I have an idea that I do not dare to launch. I wonder how and with what technology to realize my project. I am completely stuck and lost in its development.
                 </p>
-
-                <!-- Begin MailChimp Signup Form -->
-                <form action="http://cardsagainsthumanity.us2.list-manage.com/subscribe/post?u=94883f64531ee7b17a73b823f&amp;id=c1a6cc667e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                  <input type="email" value="" name="EMAIL" class="required email" placeholder='Email Address' id="mce-EMAIL" required>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;"><input type="text" name="b_94883f64531ee7b17a73b823f_c1a6cc667e" tabindex="-1" value=""></div>
-                  <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Get Updates</button>
-                </form>
-                <!--End mc_embed_signup-->
+                <a class="btn" href="mailto:osloh@googlegroups.com">I contact O'sloh!</a>
               </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="container">
-          <div class="row">
-              <img src="img/henry.png"></img>
-              <img src="img/holly.png"></img>
-              <img src="img/daniel.png"></img>
-              <img src="img/ben.png"></img>
-              <img src="img/jenn.png"></img>
-              <img src="img/max.png"></img>
-              <img src="img/amy.png"></img>
-              <img src="img/lauren.png"></img>
-              <img src="img/jon.png"></img>
-              <img src="img/scott.png"></img>
-              <img src="img/claire.png"></img>
-          </div>
-      </div>
-    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/logo.min.js"></script>
     <script>
       // Scroll to Fade header
       $(window).scroll(function(){
-        $(".header").css("opacity", 1 - ($(window).scrollTop()-300) / 1000);
+        $(".header").css("opacity", 1 - ($(window).scrollTop() - 300) / 1000);
       });
-      // Logo Animation JavaScript
-      window.onload = function() {
-        window.blackbox(document.getElementsByTagName('header')[0]);
-      };
+
+      // Select a random color at loading
+      var colors = [
+          "#F44336", // red
+          "#E91E63", // pink
+          "#9C27B0", // purple
+          "#673AB7", // deep purple
+          "#3F51B5", // indigo
+          "#2196F3", // blue
+          "#03A9F4", // light blue
+          "#00BCD4", // cyan
+          "#009688", // teal
+          "#4CAF50", // green
+          "#8BC34A", // light green
+          "#CDDC39", // lime
+          "#FFEB3B", // yellow
+          "#FFC107", // amber
+          "#FF9800", // orange
+          "#FF5722", // deep orange
+          "#795548", // brown
+          "#9E9E9E", // grey
+          "#607D8B", // blue grey
+      ];
+
+      var color = colors[parseInt(Math.random() * colors.length)];
+
+      $("body").css("background-color", color);
+      $(".header hr").css("border-top-color", color);
+      $(".header h1").css("color", color);
+      $(".intro .col-md-4").css("background-color", color);
+      $(".btn").css("background-color", color);
+      $(".btn:active").css("color", color);
     </script>
 
   </body>
 
-<!-- Mirrored from www.blackbox.cool/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Nov 2015 19:39:27 GMT -->
 </html>
