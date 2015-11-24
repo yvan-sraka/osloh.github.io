@@ -1,1 +1,108 @@
-<script>window.location.replace("https://github.com/osloh/");</script>
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from www.blackbox.cool/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Nov 2015 19:39:15 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Blackbox</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='description' content='A boring new business company from the creators of Cards Against Humanity.'>
+    <meta property="og:title" content="Blackbox">
+    <meta property="og:site_name" content="Blackbox">
+    <meta property="og:url" content="index.html">
+    <meta property="og:description" content="A boring new business company from the creators of Cards Against Humanity.">
+    <meta property="og:image" content="img/facebook-blackbox.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- TITLE/ANIMATION -->
+    <header style='position: relative;' class='header'>
+
+      <div class='background' style='position: absolute; top: 0; bottom: 0; left: 0; right: 0;'></div>
+      <div class='logo'>
+        <object type='image/svg+xml' data='img/logo.svg' style='width: 100%; height: 100%;'></object>
+      </div>
+
+    </header>
+
+    <!-- ABOUT -->
+    <div class="about">
+      <div class="intro">
+        <div class="container">
+        <img src="img/blackbox_logo_blue.png"></img>
+          <div class="row">
+            <div class="col-md-8">
+              <hr>
+              <h1>blackbox</h1>
+              <h2>a boring new business company from the creators of Cards Against Humanity.</h2>
+            </div>
+            <div class="col-md-4">
+            <!-- Negative Space above "let's talk"-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                <p>Selling stuff online is tedious and horrible, but at some point we got really good at it. Blackbox lets you sell and ship your stuff for a fraction of the cost and effort of doing it yourself. The shipping is fast. We pay your sales tax. You can customize the packaging and the inserts. It’s pretty great.</p>
+              </div>
+              <div class="col-md-4">
+                <p>We think the future is going to favor independent creators selling their own products directly to fans, without publishers or other bloodsucking middlemen taking most of the money. In fact, we’re betting the company on it.</p>
+              </div>
+              <div class="col-md-4 mailing-list">
+                <p>If you’re making something great, we’d love to make this thing work for you. Blackbox launches next year. If you want updates, sign up here.</p>
+
+                <!-- Begin MailChimp Signup Form -->
+                <form action="http://cardsagainsthumanity.us2.list-manage.com/subscribe/post?u=94883f64531ee7b17a73b823f&amp;id=c1a6cc667e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                  <input type="email" value="" name="EMAIL" class="required email" placeholder='Email Address' id="mce-EMAIL" required>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;"><input type="text" name="b_94883f64531ee7b17a73b823f_c1a6cc667e" tabindex="-1" value=""></div>
+                  <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Get Updates</button>
+                </form>
+                <!--End mc_embed_signup-->
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+          <div class="row">
+              <img src="img/henry.png"></img>
+              <img src="img/holly.png"></img>
+              <img src="img/daniel.png"></img>
+              <img src="img/ben.png"></img>
+              <img src="img/jenn.png"></img>
+              <img src="img/max.png"></img>
+              <img src="img/amy.png"></img>
+              <img src="img/lauren.png"></img>
+              <img src="img/jon.png"></img>
+              <img src="img/scott.png"></img>
+              <img src="img/claire.png"></img>
+          </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/logo.min.js"></script>
+    <script>
+      // Scroll to Fade header
+      $(window).scroll(function(){
+        $(".header").css("opacity", 1 - ($(window).scrollTop()-300) / 1000);
+      });
+      // Logo Animation JavaScript
+      window.onload = function() {
+        window.blackbox(document.getElementsByTagName('header')[0]);
+      };
+    </script>
+
+  </body>
+
+<!-- Mirrored from www.blackbox.cool/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Nov 2015 19:39:27 GMT -->
+</html>
